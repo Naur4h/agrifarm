@@ -419,6 +419,14 @@ margin-top: 400px;
 
 }
 
+@media (min-width: 767px) and (max-width: 992px) {
+    
+.sustainability p, .community p {
+ 
+    transform: translate(-40%, 0%); 
+}
+}
+
 
 @media (max-width:768px){}
 .sustainability span, .innovation span, .quality span, .community span {
