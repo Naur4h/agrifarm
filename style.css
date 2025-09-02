@@ -536,12 +536,23 @@ grid-template-rows: repeat(1,1fr);
 }
 
  }
+
+ 
 .company-contact {
 
     justify-self: center;
     align-items: center;
 
 }
+
+ @media (max-width:768px) {
+.company-contact {
+    align-content: center;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+ }
+ }
 
 .thanks-text .company-contact {
     background-color: #457800;
