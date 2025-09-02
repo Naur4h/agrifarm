@@ -410,7 +410,7 @@ margin-top: 400px;
 
 @media (max-width: 768px) {
   .sustainability p, .community p {
-    transform: translate(-8%, 0);   /* jangan digeser lagi */
+    transform: translate(0%, 0);   /* jangan digeser lagi */
     text-align: center;           /* biar rapi tengah */
     margin: 0 auto;   
     width: fit-content;     
@@ -423,7 +423,7 @@ margin-top: 400px;
     
 .sustainability p, .community p {
  
-    transform: translate(-40%, 0%); 
+    transform: translate(-50%, 0%); 
 }
 }
 
