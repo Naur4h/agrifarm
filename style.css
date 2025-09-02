@@ -527,6 +527,8 @@ grid-template-rows: repeat(1,1fr);
     border-radius: 30px;
     width: fit-content;
     box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+      justify-self: center;
+    align-items: center;
 }
 
 .thanks-text .beside-cc {
