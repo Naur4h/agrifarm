@@ -11,6 +11,8 @@
 
 html, body {
     scroll-behavior: smooth;
+
+  
 }
 
 
@@ -18,7 +20,7 @@ html, body {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     margin-top: 20px;
-    margin-left: 10px;
+  
 
 }
 
@@ -30,15 +32,27 @@ html, body {
 
 .navbar ul {
     display: grid;
-    grid-template-columns: repeat(4,150px); 
+    grid-template-columns: repeat(4,1fr); 
     list-style: none;
     gap: 10px;
     text-align: center;
     justify-content: center;
+    justify-self: center;
+
   
+}
+
+@media (max-width:768px) {
+    .navbar ul {
+        margin-left: 10px;
+  
+    }
+
+
 }
 .navbar li {
     text-align: center;
+
 }
 
 .navbar a {
@@ -87,6 +101,7 @@ html, body {
 .row-3 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+
 }
 
 .text {
@@ -146,6 +161,21 @@ margin-left: -12px;
     text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
 
     
+}
+
+@media (max-width:992px) {
+    .agrifarm {
+        margin-top: 30px;
+        font-size: 80px;
+    }
+
+    .company-profile {
+        font-size: 30px;
+    }
+
+   .growing-text {
+    font-size: 20px;
+   }
 }
 
 .company-profile {
@@ -333,7 +363,16 @@ margin-top: 400px;
  margin-left: -20px;
  }
 
-
+@media (max-width:768px) {
+    .berkebun img {
+        width: 100%;
+  
+ 
+    }
+       .our-value {
+        margin-top: -200px;
+  }
+}
 .empat-nilai {
     display: grid;
     grid-template-rows: repeat(4,1fr);
@@ -358,6 +397,7 @@ margin-top: 400px;
     width: fit-content;
     
 }
+
 
 
 .sustainability p, .community p {
@@ -518,8 +558,8 @@ grid-template-rows: repeat(1,1fr);
   padding: 20px;        /* kasih jarak biar gak mepet */
   font-size: 14px;  
   font-weight: 500;    /* ukuran tulisan */
-  color: #efffe9;        /* warna abu-abu soft */
-  background-color: #457800; /* opsional: kasih warna background */
+  color: #68a218;        /* warna abu-abu soft */
+ /* opsional: kasih warna background */
 }
 
 @media (max-width:768px) {
@@ -530,6 +570,9 @@ grid-template-rows: repeat(1,1fr);
    row-gap: 380px;
    }
    
+   .tanah-png {
+visibility: hidden;
+   }
  
 
 
