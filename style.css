@@ -558,7 +558,8 @@ grid-template-rows: repeat(1,1fr);
   padding: 20px;        /* kasih jarak biar gak mepet */
   font-size: 14px;  
   font-weight: 500;    /* ukuran tulisan */
-  color: #68a218;        /* warna abu-abu soft */
+  color: #efffe9;
+  background-color: #457800;        /* warna abu-abu soft */
  /* opsional: kasih warna background */
 }
 
