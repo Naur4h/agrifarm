@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    background: #efffe9;
+    
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+
+@media (max-width:992px) {
+    .navbar {
+      grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.navbar ul {
+    display: grid;
+    grid-template-columns: repeat(4,150px); 
+    list-style: none;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+  
+}
+.navbar li {
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    display: block;    
+    padding: 10px;
+    color: #efffe9;
+    background: #68a218;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: opacity 0.3s ease, background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color:  #457800;
+    background:  #efffe9;
+    border:2px solid #457800;
+}
+
+.navbar a:active {
+    opacity: 0.6;        
+    transform: scale(0.97); 
+}
+
+
+.top {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+
+@media (max-width:992px) {
+    .top {
+      grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+.flex-top {
+    margin-top: 15px;
+  
+
+}
+
+.row-3 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.text {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    justify-content: center;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 60%;  /* atau sesuai kebutuhan */
+  height: auto;
+  display: block;    /* buang inline gap */
+  margin: 0 auto; 
+   
+}
+
+.watermark {
+    font-weight: 450;
+    font-size: 16px;
+    justify-self: start;
+    align-self: center; /* horizontal center */
+  /* vertical center */
+  text-align: start;   
+    
+}
+
+.since-2020 {
+ font-size: 16px;
+ font-weight: 500;
+ background-color: #efffe9;
+padding: 10px;
+border-radius: 30px;
+border: 5px solid #68a218;
+width: fit-content;
+text-align: center;
+ justify-self: center; /* horizontal center */
+  align-self: center;   /* vertical center */
+  text-align: center;   
+}
+
+.since-2020 span{
+ font-size: 16px;
+ font-weight: 500;
+ background-color: #68a218;
+padding: 15px;
+border-radius: 30px;
+width: fit-content;
+margin-left: -12px;
+}
+
+
+.agrifarm {
+    font-size: 110px;
+    font-weight: 700;
+    color: rgb(69, 120, 0);
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+
+    
+}
+
+.company-profile {
+    color: black;
+    font-size:60px;
+    font-weight: 500;
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+}
+
+.growing-text {
+    font-size:33px;
+    font-weight: 350;
+    text-shadow: 2px 2px 9px rgba(0,0,0,0.3);
+}
+
+
+.photo-shape {
+    display: inline-block;
+    position: relative;
+}
+
+.petani-img img {
+    display: block;
+    width: 80%;
+    height: auto;
+    -webkit-mask-image: url("gambar/petani.png");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-image: url("gambar/petani.png");
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    background-color: rgb(69, 120, 0);
+    padding: 15px;  
+   transform: translate(10%, -40%); 
+   position: relative;
+   z-index: 2;
+
+
+}
+
+.rumput-img img {
+      justify-self: center; /* center horizontal di kolomnya */
+  align-self: center;
+    width: 70%;
+    height: auto;
+    -webkit-mask-image: url("gambar/rumput.png");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-image: url("gambar/rumput.png");
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    background-color: rgb(69, 120, 0); 
+    padding: 15px; 
+     /* posisi tengah horizontal */
+  transform: translate(15%, -90%); /* bener2 center */
+         /* atur ukuran overlay */
+
+}
+
+@media (max-width:768px) {
+    .petani-img img {
+  transform: translate(15%, -5%);
+    }
+
+    .rumput-img img {
+   transform: translate(20%, -50%);      
+    }
+}
+
+/* START HERE */
+ .tanah-png {
+      width: 200px;          /* diameter lingkaran */
+      height: 200px;
+      border-radius: 50%;    /* bikin lingkaran */
+      overflow: hidden;      /* sembunyikan bagian luar lingkaran */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -200px;
+      border: 10px solid #68a218;
+      box-shadow: 5px 5px 6px rgba(0,0,0,0.3);
+      margin-left: 200px;
+         transform: translate(-150%, -90%);   
+}
+
+.tanah-png img {
+      width: 205%;          /* zoom gambar */      
+}
+
+.vision-mission p {
+       font-size: 70px;
+    font-weight: bold;  
+    color: rgb(69, 120, 0);
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+   text-align:center;
+   margin-bottom: 30px;
+}
+
+.make-2-colums2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+
+}
+
+
+.company-vision,.company-mission {
+    justify-content: center;
+    position: relative;
+    
+}
+
+.company-vision .title-vision,.company-mission .title-mission {
+    background-color: #68a218; 
+    padding: 10px;
+    color: white;
+    font-weight: 650;
+    font-size: 20px;
+    width: fit-content;
+    border-radius: 25px;
+    position: relative;
+    z-index: 2;
+    box-shadow: -5px -5px 10px rgba(0,0,0,0.3);
+    margin-bottom: -20px;
+}
+
+.company-vision .isi-vision, .company-mission .isi-mission{
+    background-color: rgb(69, 120, 0); 
+    padding: 48px;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    width: fit-content;
+}
+
+ .value-page {
+margin-top: 400px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+ }
+
+ @media (max-width:768px) {
+.value-page {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+ }
+.our-value {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+ }
+
+ .our-value p {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #68a218; 
+    padding: 50px;
+    border-radius: 50%;
+    border: 20px solid #457800;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 10px;
+ }
+ 
+
+.berkebun img {
+    width: 120%;
+    height: auto;
+    -webkit-mask-image: url("gambar/berkebun.png");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-image: url("gambar/berkebun.png");
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    background-color: #457800; 
+    padding: 20px; 
+ margin-left: -20px;
+ }
+
+
+.empat-nilai {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    font-size: 25px;
+    font-weight: 600;
+    gap: 50px;  
+    justify-content: end;
+}
+
+
+
+/* EMPAT NILAI */
+
+
+.sustainability p, .innovation p, .quality p, .community p{
+    background-color: #457800 ;
+    padding: 20px;
+    color: white;
+    padding-right: 120px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    width: fit-content;
+    
+}
+
+
+.sustainability p, .community p {
+ 
+    transform: translate(-40%, 0%); 
+}
+.sustainability span, .innovation span, .quality span, .community span {
+    border-radius: 50px;
+    padding: 5px 20px 5px 20px;
+    margin-right: 10px;
+}
+
+/* START HERE NOW */
+ .our-product {
+    margin-top: 140px;
+    font-size: 80px;
+    color: #457800 ;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    text-align: center;
+ }
+
+ .empat-produk  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    grid-template-rows: repeat(2, 1fr);  /* 2 baris dengan tinggi 150px */
+    column-gap: 20px;
+    row-gap: 10px; /* jarak antar item (row & column) */  /* biar keliatan rapih */
+    margin-top: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    width: fit-content;
+    margin-left: 20px;
+    margin-right: 20px;
+   
+ }
+
+ @media (max-width:768px) {
+    .empat-produk {
+     
+    display: grid;
+    grid-template-columns: 1fr;  
+    grid-template-rows: repeat(4, 1fr);
+    }
+
+
+ }
+
+.empat-produk .text {
+    font-weight: 450;
+    margin-top: 20px;
+    background-color: #68a218;
+    color: white;
+    text-align: justify;
+    font-size: 19px;
+}
+
+ .vegetable p, .egg p, .fruit p, .cereal p {
+    background-color: #457800;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.3);  
+ }
+
+  .vegetable span, .egg span, .fruit span, .cereal span {
+
+    padding: 5px 18px 5px 5px;
+    border-radius: 30px;   
+ }
+
+ .thanks-page {
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr)
+ }
+
+ .vegetable .text, .egg .text, .fruit .text, .cereal .text {
+grid-template-rows: repeat(1,1fr);
+ }
+
+ .thanks-text {
+    margin-top: 50px;
+    text-align: center;
+ }
+.thanks-text .span-thanks {
+    font-size: 95px;
+    color: #457800;
+    font-weight: bold;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.3);
+}
+
+.thanks-text .below-thanks {
+    font-size: 60px;
+    font-weight: 550;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+    margin-bottom: 50px;
+}
+
+ @media (max-width:768px) {
+    .thanks-text .span-thanks {
+    font-size: 55px;
+}
+
+.thanks-text .below-thanks {
+    font-size: 30px;
+}
+
+.thanks-text .company-contact {
+    margin-bottom: 40px;
+}
+
+ }
+.company-contact {
+
+    justify-self: center;
+    align-items: center;
+
+}
+
+.thanks-text .company-contact {
+    background-color: #457800;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    padding: 12px 25px 12px 25px;
+    border-radius: 30px;
+    width: fit-content;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+
+.thanks-text .beside-cc {
+    border-radius: 20px;
+    padding: 3px 12px 3px 12px;
+   
+}
+
+.contact-info {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-weight: 500;
+}
+
+
+.contact-info span {
+    font-size: 14px;
+}
+
+.contact-info img {
+    width: 10%;
+  
+}
+
+.footer p {
+    margin-top: 40px;
+  text-align: center;   /* teks ditengah horizontal */
+  padding: 20px;        /* kasih jarak biar gak mepet */
+  font-size: 14px;  
+  font-weight: 500;    /* ukuran tulisan */
+  color: #efffe9;        /* warna abu-abu soft */
+  background-color: #457800; /* opsional: kasih warna background */
+}
+
+@media (max-width:768px) {
+
+   .make-2-colums2 {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,2fr);
+   row-gap: 380px;
+   }
+   
+ 
+
+
+}
