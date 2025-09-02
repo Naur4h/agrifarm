@@ -285,6 +285,8 @@ margin-left: -12px;
 .company-vision,.company-mission {
     justify-content: center;
     position: relative;
+    margin-left: 10px;
+    margin-right: 1px;
     
 }
 
@@ -314,6 +316,7 @@ margin-left: -12px;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
     width: fit-content;
 }
+
 
  .value-page {
 margin-top: 400px;
@@ -404,6 +407,20 @@ margin-top: 400px;
  
     transform: translate(-40%, 0%); 
 }
+
+@media (max-width: 768px) {
+  .sustainability p, .community p {
+    transform: translate(-8%, 0);   /* jangan digeser lagi */
+    text-align: center;           /* biar rapi tengah */
+    margin: 0 auto;   
+    width: fit-content;     
+        /* center block element */
+  }
+
+}
+
+
+@media (max-width:768px){}
 .sustainability span, .innovation span, .quality span, .community span {
     border-radius: 50px;
     padding: 5px 20px 5px 20px;
@@ -527,8 +544,7 @@ grid-template-rows: repeat(1,1fr);
     border-radius: 30px;
     width: fit-content;
     box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
-      justify-self: center;
-    align-items: center;
+    
 }
 
 .thanks-text .beside-cc {
