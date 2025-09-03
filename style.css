@@ -462,6 +462,14 @@ html, body {
 
 @media (max-width:992px) {
 
+
+    .petani-img img {
+   transform: translate(15%, -5%);
+    }
+
+    .rumput-img img {
+   transform: translate(20%, -40%);      
+    }
     .navbar {
     grid-template-columns: repeat(1,1fr);
     }
@@ -575,5 +583,7 @@ html, body {
 @media (min-width: 767px) and (max-width: 992px) {
     .sustainability p, .community p {
     transform: translate(-50%, 0%); 
+
+    
 }
 }
