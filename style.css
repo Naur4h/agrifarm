@@ -628,3 +628,18 @@ html, body {
     justify-content: end;
     }
 }
+
+@media (width: 912px) {
+        .sustainability p, .community p {
+    transform: translate(-30%, 0%);  
+}
+    .innovation p, .quality p {
+    transform: translate(5%, 0%);  
+    }
+
+    .empat-nilai {
+    justify-content: end;
+    }
+
+}
+
