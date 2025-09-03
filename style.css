@@ -220,8 +220,6 @@ html, body {
 .company-vision,.company-mission {
     justify-content: center;
     position: relative;
-    margin-left: 10px;
-    margin-right: 1px; 
 }
 
 .company-vision .title-vision,.company-mission .title-mission {
@@ -236,6 +234,8 @@ html, body {
     z-index: 2;
     box-shadow: -5px -5px 10px rgba(0,0,0,0.3);
     margin-bottom: -20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .company-vision .isi-vision, .company-mission .isi-mission{
@@ -248,7 +248,8 @@ html, body {
     position: absolute;
     z-index: 1;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
-    width: fit-content;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
@@ -377,6 +378,7 @@ html, body {
  .thanks-text {
     margin-top: 50px;
     text-align: center;
+    margin-bottom: 60px;
  }
 
 .thanks-text .span-thanks {
@@ -404,6 +406,7 @@ html, body {
 
 .company-contact p{
     text-align: center;
+    font-size: 15px;
 
 }
 
@@ -422,42 +425,54 @@ html, body {
 .thanks-text .beside-cc {
     border-radius: 20px;
     padding: 3px 12px 3px 12px;
+
    
 }
-
-.contact-info {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    font-weight: 500;
-    gap: 30px;  
+.contact-item {
+    display: flex;
+    align-items: center;      /* vertikal sejajar */
+    justify-content: center;  /* horizontal di tengah */
+    margin-bottom: 15px;
 }
 
-
-.contact-info p {
-  text-align: center;
-  font-size: 15px;
+.contact-item .icon {
+    margin-right: 10px;       /* jarak gambar dan teks */
 }
 
+.contact-item img {
+    width: 40px;
+    height: 40px;
+}
 
-.contact-info span {
+.contact-item .info p {
+    margin: 0; /* hapus jarak default */
+    text-align: left; 
+    font-size: 15px;
+}
+
+.contact-item .info span {
     font-size: 14px;
+    font-weight: 550;
 }
 
-.contact-info img {
-    width: 10%;
-    margin-left: 140px;
-    margin-bottom: -60px;  
-}
 
 .footer p {
     margin-top: 40px;
     text-align: center; 
-    padding: 20px;       
     font-size: 14px;  
     font-weight: 500;    
-    color: #457800     
+    color: #efffe9;
+    width: fit-content;
+    justify-self: center;
+    background-color: #457800;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+
+
+
 }
 
 @media (max-width:992px) {
@@ -496,12 +511,9 @@ html, body {
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(4,1fr);
     }
+   
 
-    .contact-info img {
-    width: 10%;
-    margin-left: 170px;
-    margin-bottom: 0px;
-    }
+
 }
 
 @media (max-width:768px) {
@@ -523,19 +535,42 @@ html, body {
     grid-template-rows: repeat(3,1fr);
     }
 
-    .berkebun img {
-    width: 100%;
-    }
+    .berkebun {
+    text-align: center;
+}
+
+.berkebun img {
+    width: 80%;
+    display: inline-block;
+}
+
 
     .our-value {
     margin-top: -200px;
     }
+
+    .empat-nilai {
+    justify-content: center;
+    }
+    
+   .sustainability p, .innovation p, .quality p, .community p{
+    padding-right: 80px;
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+
+}
     
     .sustainability p, .community p {
     transform: translate(0%, 0); 
+    text-align: center;           
+    }
+
+    .innovation p, .quality p {
+    transform: translate(0%, 0); 
     text-align: center;         
-    margin: 0 auto;   
-    width: fit-content;     
+
     }
 
    .sustainability span, .innovation span, .quality span, .community span {
@@ -583,8 +618,13 @@ html, body {
 
 @media (min-width: 767px) and (max-width: 992px) {
     .sustainability p, .community p {
-    transform: translate(-50%, 0%); 
-
-    
+    transform: translate(-60%, 0%);  
 }
+    .innovation p, .quality p {
+    transform: translate(-40%, 0%);  
+    }
+
+    .empat-nilai {
+    justify-content: end;
+    }
 }
