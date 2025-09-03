@@ -380,7 +380,7 @@ html, body {
  }
 
 .thanks-text .span-thanks {
-    font-size: 95px;
+    font-size: 85px;
     color: #457800;
     font-weight: bold;
     text-shadow: 4px 4px 3px rgba(0,0,0,0.3);
@@ -397,10 +397,14 @@ html, body {
 .company-contact {
     justify-self: center;
     align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .company-contact p{
     text-align: center;
+
 }
 
 .thanks-text .company-contact {
