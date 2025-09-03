@@ -11,8 +11,6 @@
 
 html, body {
     scroll-behavior: smooth;
-
-  
 }
 
 
@@ -20,15 +18,8 @@ html, body {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     margin-top: 20px;
-  
-
 }
 
-@media (max-width:992px) {
-    .navbar {
-      grid-template-columns: repeat(1,1fr);
-    }
-}
 
 .navbar ul {
     display: grid;
@@ -38,21 +29,11 @@ html, body {
     text-align: center;
     justify-content: center;
     justify-self: center;
-
   
 }
 
-@media (max-width:768px) {
-    .navbar ul {
-        margin-left: 10px;
-  
-    }
-
-
-}
 .navbar li {
     text-align: center;
-
 }
 
 .navbar a {
@@ -80,28 +61,17 @@ html, body {
 
 .top {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    
-}
-
-
-@media (max-width:992px) {
-    .top {
-      grid-template-columns: repeat(1,1fr);
-    }
+    grid-template-columns: repeat(2,1fr);    
 }
 
 
 .flex-top {
     margin-top: 15px;
-  
-
 }
 
 .row-3 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-
 }
 
 .text {
@@ -112,45 +82,42 @@ html, body {
 }
 
 .logo img {
-    max-width: 60%;  /* atau sesuai kebutuhan */
-  height: auto;
-  display: block;    /* buang inline gap */
-  margin: 0 auto; 
-   
+    max-width: 60%;
+    height: auto;
+    display: block; 
+    margin: 0 auto;  
 }
 
 .watermark {
     font-weight: 450;
     font-size: 16px;
     justify-self: start;
-    align-self: center; /* horizontal center */
-  /* vertical center */
-  text-align: start;   
-    
+    align-self: center; 
+    text-align: start;       
 }
 
 .since-2020 {
- font-size: 16px;
- font-weight: 500;
- background-color: #efffe9;
-padding: 10px;
-border-radius: 30px;
-border: 5px solid #68a218;
-width: fit-content;
-text-align: center;
- justify-self: center; /* horizontal center */
-  align-self: center;   /* vertical center */
-  text-align: center;   
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #efffe9;
+    padding: 10px;
+    border-radius: 30px;
+    border: 5px solid #68a218;
+    width: fit-content;
+    text-align: center;
+    justify-self: center; /* horizontal center */
+    align-self: center;   /* vertical center */
+    text-align: center;   
 }
 
 .since-2020 span{
- font-size: 16px;
- font-weight: 500;
- background-color: #68a218;
-padding: 15px;
-border-radius: 30px;
-width: fit-content;
-margin-left: -12px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #68a218;
+    padding: 15px;
+    border-radius: 30px;
+    width: fit-content;
+    margin-left: -12px;
 }
 
 
@@ -158,25 +125,9 @@ margin-left: -12px;
     font-size: 110px;
     font-weight: 700;
     color: rgb(69, 120, 0);
-    text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
-
-    
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.3);  
 }
 
-@media (max-width:992px) {
-    .agrifarm {
-        margin-top: 30px;
-        font-size: 80px;
-    }
-
-    .company-profile {
-        font-size: 30px;
-    }
-
-   .growing-text {
-    font-size: 20px;
-   }
-}
 
 .company-profile {
     color: black;
@@ -209,16 +160,14 @@ margin-left: -12px;
     mask-size: cover;
     background-color: rgb(69, 120, 0);
     padding: 15px;  
-   transform: translate(10%, -40%); 
-   position: relative;
-   z-index: 2;
-
-
+    transform: translate(10%, -40%); 
+    position: relative;
+    z-index: 2;
 }
 
 .rumput-img img {
-      justify-self: center; /* center horizontal di kolomnya */
-  align-self: center;
+    justify-self: center; /* center horizontal di kolomnya */
+    align-self: center;
     width: 70%;
     height: auto;
     -webkit-mask-image: url("gambar/rumput.png");
@@ -229,56 +178,42 @@ margin-left: -12px;
     mask-size: cover;
     background-color: rgb(69, 120, 0); 
     padding: 15px; 
-     /* posisi tengah horizontal */
-  transform: translate(15%, -90%); /* bener2 center */
-         /* atur ukuran overlay */
-
+    transform: translate(15%, -90%);
 }
 
-@media (max-width:768px) {
-    .petani-img img {
-  transform: translate(15%, -5%);
-    }
 
-    .rumput-img img {
-   transform: translate(20%, -50%);      
-    }
-}
-
-/* START HERE */
  .tanah-png {
-      width: 200px;          /* diameter lingkaran */
-      height: 200px;
-      border-radius: 50%;    /* bikin lingkaran */
-      overflow: hidden;      /* sembunyikan bagian luar lingkaran */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: -200px;
-      border: 10px solid #68a218;
-      box-shadow: 5px 5px 6px rgba(0,0,0,0.3);
-      margin-left: 200px;
-         transform: translate(-150%, -90%);   
+    width: 200px;          /* diameter lingkaran */
+    height: 200px;
+    border-radius: 50%;    /* bikin lingkaran */
+    overflow: hidden;      /* sembunyikan bagian luar lingkaran */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+    border: 10px solid #68a218;
+    box-shadow: 5px 5px 6px rgba(0,0,0,0.3);
+    margin-left: 200px;
+    transform: translate(-150%, -90%);   
 }
 
 .tanah-png img {
-      width: 205%;          /* zoom gambar */      
+    width: 205%;          /* zoom gambar */      
 }
 
 .vision-mission p {
-       font-size: 70px;
+    font-size: 70px;
     font-weight: bold;  
     color: rgb(69, 120, 0);
     text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
-   text-align:center;
-   margin-bottom: 30px;
+    text-align:center;
+    margin-bottom: 30px;
 }
 
 .make-2-colums2 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 15px;
-
 }
 
 
@@ -286,8 +221,7 @@ margin-left: -12px;
     justify-content: center;
     position: relative;
     margin-left: 10px;
-    margin-right: 1px;
-    
+    margin-right: 1px; 
 }
 
 .company-vision .title-vision,.company-mission .title-mission {
@@ -319,25 +253,19 @@ margin-left: -12px;
 
 
  .value-page {
-margin-top: 400px;
+    margin-top: 400px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
  }
 
- @media (max-width:768px) {
-.value-page {
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(3,1fr);
-}
 
- }
 .our-value {
     display: flex;
     justify-content: center; 
     align-items: center; 
-
  }
 
+ 
  .our-value p {
     font-size: 50px;
     text-align: center;
@@ -363,19 +291,9 @@ margin-top: 400px;
     mask-size: cover;
     background-color: #457800; 
     padding: 20px; 
- margin-left: -20px;
+    margin-left: -20px;
  }
 
-@media (max-width:768px) {
-    .berkebun img {
-        width: 100%;
-  
- 
-    }
-       .our-value {
-        margin-top: -200px;
-  }
-}
 .empat-nilai {
     display: grid;
     grid-template-rows: repeat(4,1fr);
@@ -385,10 +303,12 @@ margin-top: 400px;
     justify-content: end;
 }
 
-
-
-/* EMPAT NILAI */
-
+.sustainability span, .innovation span, .quality span, .community span {
+    border-radius: 50px;
+    padding: 5px 20px 5px 20px;
+    margin-right: 10px;
+}
+ 
 
 .sustainability p, .innovation p, .quality p, .community p{
     background-color: #457800 ;
@@ -397,42 +317,11 @@ margin-top: 400px;
     padding-right: 120px;
     border-radius: 50px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
-    width: fit-content;
-    
+    width: fit-content;    
 }
 
-
-
 .sustainability p, .community p {
- 
     transform: translate(-40%, 0%); 
-}
-
-@media (max-width: 768px) {
-  .sustainability p, .community p {
-    transform: translate(0%, 0);   /* jangan digeser lagi */
-    text-align: center;           /* biar rapi tengah */
-    margin: 0 auto;   
-    width: fit-content;     
-        /* center block element */
-  }
-
-}
-
-@media (min-width: 767px) and (max-width: 992px) {
-    
-.sustainability p, .community p {
- 
-    transform: translate(-50%, 0%); 
-}
-}
-
-
-@media (max-width:768px){}
-.sustainability span, .innovation span, .quality span, .community span {
-    border-radius: 50px;
-    padding: 5px 20px 5px 20px;
-    margin-right: 10px;
 }
 
 /* START HERE NOW */
@@ -457,18 +346,6 @@ margin-top: 400px;
     width: fit-content;
     margin-left: 20px;
     margin-right: 20px;
-   
- }
-
- @media (max-width:768px) {
-    .empat-produk {
-     
-    display: grid;
-    grid-template-columns: 1fr;  
-    grid-template-rows: repeat(4, 1fr);
-    }
-
-
  }
 
 .empat-produk .text {
@@ -489,25 +366,19 @@ margin-top: 400px;
  }
 
   .vegetable span, .egg span, .fruit span, .cereal span {
-
     padding: 5px 18px 5px 5px;
     border-radius: 30px;   
  }
 
- .thanks-page {
-
-    display: grid;
-    grid-template-columns: repeat(1,1fr)
- }
-
  .vegetable .text, .egg .text, .fruit .text, .cereal .text {
-grid-template-rows: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
  }
 
  .thanks-text {
     margin-top: 50px;
     text-align: center;
  }
+
 .thanks-text .span-thanks {
     font-size: 95px;
     color: #457800;
@@ -522,37 +393,15 @@ grid-template-rows: repeat(1,1fr);
     margin-bottom: 50px;
 }
 
- @media (max-width:768px) {
-    .thanks-text .span-thanks {
-    font-size: 55px;
-}
-
-.thanks-text .below-thanks {
-    font-size: 30px;
-}
-
-.thanks-text .company-contact {
-    margin-bottom: 40px;
-}
-
- }
-
  
 .company-contact {
-
     justify-self: center;
     align-items: center;
-
 }
 
- @media (max-width:768px) {
-.company-contact {
-    align-content: center;
-    align-self: center;
-    justify-self: center;
-    align-items: center;
- }
- }
+.company-contact p{
+    text-align: center;
+}
 
 .thanks-text .company-contact {
     background-color: #457800;
@@ -576,7 +425,15 @@ grid-template-rows: repeat(1,1fr);
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
     font-weight: 500;
+    gap: 30px;  
+}
+
+
+.contact-info p {
+  text-align: center;
+  font-size: 15px;
 }
 
 
@@ -586,32 +443,133 @@ grid-template-rows: repeat(1,1fr);
 
 .contact-info img {
     width: 10%;
-  
+    margin-left: 140px;
+    margin-bottom: -60px;  
 }
 
 .footer p {
     margin-top: 40px;
-  text-align: center;   /* teks ditengah horizontal */
-  padding: 20px;        /* kasih jarak biar gak mepet */
-  font-size: 14px;  
-  font-weight: 500;    /* ukuran tulisan */
-  color: #efffe9;
-  background-color: #457800;        /* warna abu-abu soft */
- /* opsional: kasih warna background */
+    text-align: center; 
+    padding: 20px;       
+    font-size: 14px;  
+    font-weight: 500;    
+    color: #457800     
+}
+
+@media (max-width:992px) {
+
+    .navbar {
+    grid-template-columns: repeat(1,1fr);
+    }
+    
+    .top {
+    grid-template-columns: repeat(1,1fr);
+    }
+
+    .agrifarm {
+    margin-top: 30px;
+    font-size: 80px;
+    }
+
+    .company-profile {
+    font-size: 30px;
+    }   
+
+   .growing-text {
+    font-size: 20px;
+    }
+    
+   .contact-info {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    }
+
+    .contact-info img {
+    width: 10%;
+    margin-left: 170px;
+    margin-bottom: 0px;
+    }
 }
 
 @media (max-width:768px) {
+    .navbar ul {
+    margin-left: 10px;
+    }
+
+
+    .petani-img img {
+   transform: translate(15%, -5%);
+    }
+
+    .rumput-img img {
+   transform: translate(20%, -50%);      
+    }
+
+    .value-page {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+    }
+
+    .berkebun img {
+    width: 100%;
+    }
+
+    .our-value {
+    margin-top: -200px;
+    }
+    
+    .sustainability p, .community p {
+    transform: translate(0%, 0); 
+    text-align: center;         
+    margin: 0 auto;   
+    width: fit-content;     
+    }
+
+   .sustainability span, .innovation span, .quality span, .community span {
+    border-radius: 50px;
+    padding: 5px 20px 5px 20px;
+    margin-right: 10px;
+    }
+
+    .empat-produk {    
+    display: grid;
+    grid-template-columns: 1fr;  
+    grid-template-rows: repeat(4, 1fr);
+    }
+
 
    .make-2-colums2 {
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(2,2fr);
    row-gap: 380px;
-   }
+    }
    
    .tanah-png {
-visibility: hidden;
-   }
- 
+    visibility: hidden;
+    }
 
+    .thanks-text .span-thanks {
+    font-size: 55px;
+    }
 
+    .thanks-text .below-thanks {
+    font-size: 30px;
+    }
+
+    .thanks-text .company-contact {
+    margin-bottom: 40px;
+    }
+
+    .company-contact {
+    align-content: center;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    .sustainability p, .community p {
+    transform: translate(-50%, 0%); 
+}
 }
