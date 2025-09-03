@@ -638,3 +638,24 @@ html, body {
     }
 
 }
+
+@media (width: 820px) {
+
+    .berkebun img {
+        width: 200%;
+    }
+    .sustainability p, .community p {
+    transform: translate(-10%, 0%);  
+}
+    .innovation p, .quality p {
+    transform: translate(5%, 0%);  
+    }
+
+    .empat-nilai {
+        margin-top: 100px;
+    justify-content: center;
+    }
+
+}
+
+
