@@ -2,7 +2,7 @@
 Website company profile sederhana untuk menampilkan profil perusahaan **AgriFarm**: visi, misi, produk, dan nilai.  
 
 ## 🎨 Desain
-- Desain layout, warna, dan elemen visual terinspirasi & dibuat menggunakan **Canva**.  
+- Desain layout, warna, dan elemen visual terinspirasi dari **Canva**.  
 - Saya hanya melakukan **implementasi ke dalam kode (HTML & CSS)**, bukan membuat desain dari nol.  
 
 ## ✨ Fitur Utama
