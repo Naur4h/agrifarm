@@ -13,8 +13,7 @@ Website company profile sederhana untuk menampilkan profil perusahaan **AgriFarm
 
 ## 🛠️ Teknologi
 - HTML  
-- CSS  
-- Canva (untuk desain visual)  
+- CSS   
 
 ## 📌 Catatan
 Proyek ini bertujuan sebagai latihan coding frontend dasar, bukan untuk tujuan komersial.  
